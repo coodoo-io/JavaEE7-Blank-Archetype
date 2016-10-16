@@ -1,1 +1,1 @@
-# JavaEE7-Blank-Architype
+# JavaEE7: Blank Architype
