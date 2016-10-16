@@ -2,12 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.coodoo</groupId>
     <artifactId>JavaEE7-Blank-Architype</artifactId>
-    <version>0.1.0</version>
+    <version>1.0</version>
     <name>JavaEE7-Blank-Architype</name>
     <description>A totally blank configuration ready JavaEE Project!</description>
-    <url>http://coodoo.io</url>
+    <url>https://github.com/coodoo-io/JavaEE7-Blank-Architype</url>
     <organization>
-        <name>Jan Marsh</name>
+        <name>coodoo GmbH</name>
         <url>http://coodoo.io</url>
     </organization>
     <inceptionYear>2016</inceptionYear>
@@ -21,7 +21,8 @@
     <developers>
         <developer>
             <name>Jan Marsh</name>
-            <organization>coodoo.io</organization>
+            <email>Jan.Marsh@coodoo.io</email>
+            <organization>coodoo GmbH</organization>
             <organizationUrl>http://coodoo.io</organizationUrl>
         </developer>
     </developers>
@@ -45,6 +46,20 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>3.0.1</version>
                 <executions>
@@ -56,6 +71,12 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration></configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -73,4 +94,14 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
+    <scm>
+        <connection>scm:git:git@github.com/coodoo-io/JavaEE7-Blank-Architype.git</connection>
+        <url>scm:git:git@github.com:coodoo-io/JavaEE7-Blank-Architype.git</url>
+        <developerConnection>scm:git:git@github.com:coodoo-io/JavaEE7-Blank-Architype.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/coodoo-io/JavaEE7-Blank-Architype/issues</url>
+    </issueManagement>
 </project>
