@@ -1,8 +1,8 @@
-# JavaEE7: Blank Archetype
+# JavaEE 7: Blank Archetype
 A totally blank configuration ready JavaEE 7 Project.
 
 What does it contain:
-- Empty Java EE Project structure - maven build ready
+- Empty Java EE Project structure - maven build and deploy ready
 - Example beans.xml for CDI
 - Example perstistence.xml for JPA
 - Example JAXRSConfig.java for JAX-RS Web Services
@@ -11,12 +11,12 @@ All configuration files have the extension .example by default, so they are not 
 If you want to use CDI for example just remove the .example extension and your ready to go.
 Need a database remove .example extension from persistence.xml, same for JAX-RS,...
 
-How To use with interactive mode:
+How to use with interactive mode:
 ```sh
 mvn archetype:generate -Dfilter=io.coodoo:JavaEE7-Blank-Archetype
 ```
 
-
+How to use with non interactive mode:
 ```sh
 mvn archetype:generate                        \
 -DarchetypeGroupId=io.coodoo                  \
@@ -27,4 +27,4 @@ mvn archetype:generate                        \
 -Dversion=1.1-SNAPSHOT
 ```
 
-Remove ```.example``` extension as needed.
+Remove ```.example``` extension on sample configuration files as needed.
