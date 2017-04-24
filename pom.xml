@@ -11,13 +11,6 @@
         <url>http://coodoo.io</url>
     </organization>
     <inceptionYear>2017</inceptionYear>
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>https://raw.githubusercontent.com/coodoo-io/JavaEE7-Blank-Archetype/master/LICENSE</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
     <developers>
         <developer>
             <name>Jan Marsh</name>
@@ -32,6 +25,13 @@
             <organizationUrl>http://coodoo.io</organizationUrl>
         </developer>
     </developers>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://raw.githubusercontent.com/coodoo-io/JavaEE7-Blank-Archetype/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
     <packaging>maven-archetype</packaging>
     <build>
         <extensions>
@@ -80,6 +80,12 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
