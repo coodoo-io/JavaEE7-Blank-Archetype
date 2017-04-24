@@ -2,7 +2,7 @@
 A totally blank configuration ready JavaEE 7 Project.
 
 What does it contain:
-- Empty Java EE Project structure - maven build ready
+- Empty Java EE Project structure - maven build and deploy ready
 - Example beans.xml for CDI
 - Example perstistence.xml for JPA
 - Example JAXRSConfig.java for JAX-RS Web Services
